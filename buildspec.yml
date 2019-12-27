@@ -7,10 +7,6 @@ phases:
          - pwd 
          - echo "Listing the Files"
          - ls
-         - echo $env
-         - echo $region
-         - echo $user
-         - echo $id
 artifacts:
     files:
       - '**/*'
