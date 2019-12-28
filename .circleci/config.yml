@@ -9,10 +9,9 @@ jobs:
 workflows:
   deploy_application:
     jobs:
-      - build
       - aws-code-deploy/deploy:
-          application-name: ReactApp1002
-          deployment-group: ReactApp1002-DG
+          application-name: MyReactApp
+          deployment-group: MyReactApp-DG
           service-role-arn: arn:aws:iam::760603953831:role/CodeDeployServiceRole2
           bundle-bucket: codefrontbucket
           bundle-key: ReactApp      
