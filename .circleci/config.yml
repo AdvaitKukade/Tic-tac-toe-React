@@ -4,9 +4,9 @@ jobs:
     docker: 
       - image: alpine
     environment: 
-      - AWS_ACCESS_KEY_ID: AKIAJC7WTJKFJXGMX7AQ
-      - AWS_DEFAULT_REGION: ap-south-1
-      - AWS_SECRET_ACCESS_KEY: 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
+      AWS_ACCESS_KEY_ID: AKIAJC7WTJKFJXGMX7AQ
+      AWS_DEFAULT_REGION: ap-south-1
+      AWS_SECRET_ACCESS_KEY: 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
     steps:
       - run: apk update && apk add git
       - run: apk add --update python python-dev py-pip build-base
