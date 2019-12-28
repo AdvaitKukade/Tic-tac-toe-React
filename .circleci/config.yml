@@ -11,13 +11,16 @@ jobs:
       - run: apk update && apk add git
       - run: apk add --update python python-dev py-pip build-base
       - run: pip install awscli 
+      - run: echo $AWS_ACCESS_KEY_ID
+      - run: echo $AWS_DEFAULT_REGION
+      - run: echo $AWS_SECRET_ACCESS_KEY
 workflows:
   deploy_application:
     jobs:
       - aws-code-deploy/deploy:
           application-name: MyReactApp
           deployment-group: MyReactApp-DG
-          service-role-arn: arn:aws:iam::760603953831:role/CodeDeployServiceRole2
+          service-role-arn: aws:iam::760603953831:role/CodeDeployServiceRole2
           bundle-bucket: codefrontbucket
           bundle-key: ReactApp
 orbs:
