@@ -3,10 +3,10 @@ jobs:
   build:
     docker: 
       - image: alpine
-  steps:
-    - run: apk update && apk add git
-    - run: apk add --update python python-dev py-pip build-base
-    - run: pip install awscli 
+    steps:
+      - run: apk update && apk add git
+      - run: apk add --update python python-dev py-pip build-base
+      - run: pip install awscli 
 workflows:
   deploy_application:
     jobs:
