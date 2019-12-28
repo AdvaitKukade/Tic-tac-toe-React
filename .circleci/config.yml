@@ -1,12 +1,20 @@
 version: 2.1
-orbs:
-  aws-code-deploy: circleci/aws-code-deploy@0.0.11
+jobs:
+  build:
+    - image: alpine
+  steps:
+    - run: apk update && apk add git
+    - run: apk add --update python python-dev py-pip build-base
+    - run: pip install awscli 
 workflows:
   deploy_application:
     jobs:
+      - build
       - aws-code-deploy/deploy:
           application-name: ReactApp1002
           deployment-group: ReactApp1002-DG
           service-role-arn: arn:aws:iam::760603953831:role/CodeDeployServiceRole2
           bundle-bucket: codefrontbucket
-          bundle-key: ReactApp
+          bundle-key: ReactApp      
+orbs:
+  aws-code-deploy: circleci/aws-code-deploy@0.0.11
