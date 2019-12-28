@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  aws-code-deploy: circleci/aws-code-deploy@1.0.0
+  aws-code-deploy: circleci/aws-code-deploy@0.0.11
 workflows:
   deploy_application:
     jobs:
@@ -9,4 +9,4 @@ workflows:
           deployment-group: ReactApp100-DG
           service-role-arn: arn:aws:iam::760603953831:role/CodeDeployServiceRole2
           bundle-bucket: codefrontbucket
-          bundle-key: ReactApp           
+          bundle-key: ReactApp
