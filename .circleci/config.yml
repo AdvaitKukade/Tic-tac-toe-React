@@ -18,5 +18,10 @@ workflows:
           service-role-arn: arn:aws:iam::760603953831:role/CodeDeployServiceRole2
           bundle-bucket: codefrontbucket
           bundle-key: ReactApp
+      - aws-cli:
+          aws-access-key-id: AKIAJC7WTJKFJXGMX7AQ
+          aws-secret-access-key: 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
+          aws-region: ap-south-1
 orbs:
   aws-code-deploy: circleci/aws-code-deploy@0.0.11
+  aws-cli: circleci/aws-cli@0.1.19
