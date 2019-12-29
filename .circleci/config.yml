@@ -1,4 +1,11 @@
 version: 2.1
+jobs:
+  build:
+    docker:
+      - image: alpine
+    environment:
+      AWS_DEFAULT_REGION: ap-south-1
+
 workflows:
   deploy_application:
     jobs:
@@ -9,4 +16,4 @@ workflows:
           bundle-bucket: codefrontbucket
           bundle-key: ReactApp
 orbs:
-  aws-code-deploy: circleci/aws-code-deploy@0.0.10
+  aws-code-deploy: circleci/aws-code-deploy@0.0.11
