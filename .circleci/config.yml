@@ -1,11 +1,4 @@
 version: 2.1
-jobs:
-  build:
-    docker:
-      - image: alpine
-    environment:
-      AWS_DEFAULT_REGION: ap-south-1
-
 workflows:
   deploy_application:
     jobs:
