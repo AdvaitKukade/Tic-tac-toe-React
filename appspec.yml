@@ -8,10 +8,6 @@ hooks:
     - location: tttgame/scripts/clean_files.sh
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: tttgame/scripts/test_npm.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
     - location: tttgame/scripts/start_server.sh
       timeout: 300
