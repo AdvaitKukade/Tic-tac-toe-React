@@ -1,32 +1,12 @@
 version: 2.1
-jobs:
-  build:
-    docker:
-      - image: circleci/classic:201708-01
-    steps:
-      - checkout
-      - restore_cache: 
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run: 
-          name: Setup Dependencies
-          commands: npm install
-      - save_cache: 
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths: 
-            - ./node_modules
-            
-  aws-code-deploy/deploy:      
-    application-name: MyReactApp
-    deployment-group: MyReactApp-DG
-    service-role-arn: aws:iam::760603953831:role/CodeDeployServiceRole2
-    bundle-bucket: codefrontbucket
-    bundle-key: ReactApp
-    
 workflows:
-  build: 
-    jobs:    
-      - aws-code-deploy/deploy:        
-  
+  deploy_application:
+    - aws-code-deploy/deploy:      
+        application-name: MyReactApp
+        deployment-group: MyReactApp-DG
+        service-role-arn: aws:iam::760603953831:role/CodeDeployServiceRole2
+        bundle-bucket: codefrontbucket
+        bundle-key: ReactApp
+        
 orbs:
   aws-code-deploy: circleci/aws-code-deploy@0.0.11
-  cypress: cypress-io/cypress@1.13.0
