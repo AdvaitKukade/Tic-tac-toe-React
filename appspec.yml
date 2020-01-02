@@ -5,10 +5,10 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: clean_files.sh
+    - location: scripts/clean_files.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: execute_npm.sh
+    - location: scripts/execute_npm.sh
       timeout: 300
       runas: root
