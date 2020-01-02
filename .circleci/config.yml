@@ -15,8 +15,9 @@ jobs:
           paths: 
             - ./node_modules
 workflows:
-  deploy_application:
+  my_workflow:
     jobs:
+      - build:
       - aws-code-deploy/deploy:
           application-name: MyReactApp
           deployment-group: MyReactApp-DG
