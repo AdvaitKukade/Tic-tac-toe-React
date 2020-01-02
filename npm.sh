@@ -1,4 +1,5 @@
 sudo chmod a+rwx tttgame/
 cd tttgame/
 sudo npm i
-sudo npm start 
+sudo npm run build
+pm2 restart 0
