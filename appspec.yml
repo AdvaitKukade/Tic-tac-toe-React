@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: ./tttgame
     destination: /var/www/html/
 hooks:
   BeforeInstall: 
