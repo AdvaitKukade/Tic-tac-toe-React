@@ -8,7 +8,7 @@ hooks:
     - location: clean_files.sh
       timeout: 300
       runas: root
-  ApplicationStart:
+  AfterInstall:
     - location: execute_npm.sh
       timeout: 300
       runas: root
