@@ -9,6 +9,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/CP-NPM.sh
+    - location: scripts/npm_i_start.sh
       timeout: 300
       runas: root
