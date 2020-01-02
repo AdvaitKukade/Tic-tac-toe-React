@@ -14,15 +14,20 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths: 
             - ./node_modules
+            
+  aws-code-deploy/deploy:      
+    application-name: MyReactApp
+    deployment-group: MyReactApp-DG
+    service-role-arn: aws:iam::760603953831:role/CodeDeployServiceRole2
+    bundle-bucket: codefrontbucket
+    bundle-key: ReactApp
+    
 workflows:
   my_workflow:
-    jobs:
-      - build:
-      - aws-code-deploy/deploy:
-          application-name: MyReactApp
-          deployment-group: MyReactApp-DG
-          service-role-arn: aws:iam::760603953831:role/CodeDeployServiceRole2
-          bundle-bucket: codefrontbucket
-          bundle-key: ReactApp
+    jobs:    
+      - build
+      - aws-code-deploy/deploy:        
+          requires:
+            - build
 orbs:
   aws-code-deploy: circleci/aws-code-deploy@0.0.11
