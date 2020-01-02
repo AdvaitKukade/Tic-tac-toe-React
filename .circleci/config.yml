@@ -1,7 +1,23 @@
 version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - restore_cache: 
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run: 
+          name: Setup Dependencies
+          commands: npm install
+      - save_cache: 
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths: 
+            - ./node_modules
 workflows:
   deploy_application:
     jobs:
+      - build
       - aws-code-deploy/deploy:
           application-name: MyReactApp
           deployment-group: MyReactApp-DG
