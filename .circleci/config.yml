@@ -10,4 +10,4 @@ workflows:
           bundle-key: ReactApp
           
 orbs:
-  aws-code-deploy: circleci/aws-code-deploy@0.0.10
+  aws-code-deploy: circleci/aws-code-deploy@0.0.11
