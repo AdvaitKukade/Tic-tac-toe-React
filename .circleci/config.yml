@@ -23,11 +23,10 @@ jobs:
     bundle-key: ReactApp
     
 workflows:
-  my_workflow:
+  build: 
     jobs:    
-      - build
       - aws-code-deploy/deploy:        
-          requires:
-            - build
+  
 orbs:
   aws-code-deploy: circleci/aws-code-deploy@0.0.11
+  cypress: cypress-io/cypress@1.13.0
