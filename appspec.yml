@@ -8,3 +8,7 @@ hooks:
     - location: clean_files.sh
       timeout: 300
       runas: root
+  ApplicationStart:
+    - location: kill_port.sh
+      timeout: 300
+      runas: root
