@@ -8,3 +8,7 @@ hooks:
     - location: clean_files.sh
       timeout: 300
       runas: root
+  AfterInstall:
+    - location: npm.sh
+      timeout: 300
+      runas: root
