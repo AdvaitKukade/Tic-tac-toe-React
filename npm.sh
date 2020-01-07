@@ -4,4 +4,4 @@ sudo kill -9 `sudo lsof -t -i:3000`
 sudo npm i 
 sudo npm run build
 #sudo pm2 start --name app npm -- run start
-sudo npm -- run startssh -i "Advait-KeyPair.pem" root@ec2-15-206-147-88.ap-south-1.compute.amazonaws.com
+sudo npm -- run start
