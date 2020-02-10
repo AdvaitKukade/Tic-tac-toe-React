@@ -1,4 +1,4 @@
-apt-get install -y npm 
-npm i --save
-npm run build 
-npm start 
+sudo apt-get install -y npm 
+sudo npm i --save
+sudo npm run build 
+sudo npm start 
