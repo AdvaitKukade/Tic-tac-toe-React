@@ -1,0 +1,25 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/demo
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/Tic-tac-toe-React.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/Tic-tac-toe-React.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/Tic-tac-toe-React.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > /usr/bin/git show-ref --tags -d # timeout=10
+Checking out Revision 10e7083ffa06276f1aedc812ca8a92fdd655f382 (origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 10e7083ffa06276f1aedc812ca8a92fdd655f382 # timeout=10
+Commit message: "Update Square.css"
+ > /usr/bin/git rev-list --no-walk 10e7083ffa06276f1aedc812ca8a92fdd655f382 # timeout=10
+[demo] $ /bin/sh -xe /tmp/jenkins2156940775231907385.sh
++ npm i --save
+/tmp/jenkins2156940775231907385.sh: 2: /tmp/jenkins2156940775231907385.sh: npm: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,31 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/demo
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/Tic-tac-toe-React.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/Tic-tac-toe-React.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/Tic-tac-toe-React.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > /usr/bin/git show-ref --tags -d # timeout=10
+Checking out Revision cae0378e4a0352bcc5ce080f6053f9c1c3ed15be (origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f cae0378e4a0352bcc5ce080f6053f9c1c3ed15be # timeout=10
+Commit message: "Create script.sh"
+ > /usr/bin/git rev-list --no-walk cae0378e4a0352bcc5ce080f6053f9c1c3ed15be # timeout=10
+[demo] $ /bin/sh /tmp/jenkins5570740255465144379.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

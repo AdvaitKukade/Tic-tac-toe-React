@@ -1,0 +1,32 @@
+Started by user [8mha:////4PSaZmWGvGWWeeFFKb0ari3sqR14ubeXg9BUcuwu+gPcAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/demo
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/Tic-tac-toe-React.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/Tic-tac-toe-React.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/Tic-tac-toe-React.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > /usr/bin/git show-ref --tags -d # timeout=10
+Checking out Revision 1216ba1a2be0abd41ea5363e8d0346d5105a3bec (origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 1216ba1a2be0abd41ea5363e8d0346d5105a3bec # timeout=10
+Commit message: "Update script.sh"
+ > /usr/bin/git rev-list --no-walk 1216ba1a2be0abd41ea5363e8d0346d5105a3bec # timeout=10
+[demo] $ /bin/bash /tmp/jenkins3401494872615137420.sh
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,21 @@
+Started on Feb 11, 2020 9:30:15 AM
+Started by event from 192.30.252.97 ⇒ http://0be14231.ngrok.io:8080/github-webhook/ on Tue Feb 11 09:30:14 UTC 2020
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision 1216ba1a2be0abd41ea5363e8d0346d5105a3bec (origin/master)
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/Tic-tac-toe-React.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/Tic-tac-toe-React.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/Tic-tac-toe-React.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Polling for changes in
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > /usr/bin/git show-ref --tags -d # timeout=10
+ > /usr/bin/git log --full-history --no-abbrev --format=raw -M -m 1216ba1a2be0abd41ea5363e8d0346d5105a3bec..bde792495724788692dda9c91082832c1bc3056b # timeout=10
+Done. Took 10 sec
+Changes found

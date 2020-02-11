@@ -1,0 +1,346 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/demo
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+Cloning the remote Git repository
+Cloning repository https://github.com/AdvaitKukade/HTML-Assignment.git
+ > /usr/bin/git init /var/jenkins_home/workspace/demo # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/HTML-Assignment.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/HTML-Assignment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/HTML-Assignment.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/HTML-Assignment.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/HTML-Assignment.git
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/HTML-Assignment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 94c3f8b701e5354c14613a57741998473d034478 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 94c3f8b701e5354c14613a57741998473d034478 # timeout=10
+Commit message: "Update index.html"
+First time build. Skipping changelog.
+[demo] $ /bin/sh -xe /tmp/jenkins8373599916220538660.sh
++ echo The contents of the file are as follows :
+The contents of the file are as follows :
++ cat index.html
+<!DOCTYPE html>
+<html>
+
+        <!-----------------------------------------------------Code for Head----------------------------------------------->
+
+    <head>
+        <title>* Some change here. Assume i changed something. * </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="./CSS Files/reset.css">
+        <link rel="stylesheet" type="text/css" href="./CSS Files/HomePage.css">
+    </head>
+
+    <body>
+
+        <div class="outer-container">
+                
+           <!---------------------------------------------Code for Navigation Bar------------------------------------------>
+            <header>
+                <div class="inner-container">
+                    <a href="#"><img src="./images/logo1.png"></a>
+                    <a href="#"><img src="./images/menu1.png"></a>
+
+                    <ul class="list">
+                        <li><a href="#"><img src="./images/message.png"></a></li>
+                        <li><a href="#"><img src="./images/settings1.png"></a></li>
+                        <li><a href="#"><img src="./images/search1.png"></a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                        
+                    <div class="clearfix"></div>
+                </div>
+            </header>
+
+           <!--------------------------------------------Code for 4 Rectangles-------------------------------------------->
+
+             <section class="section1">
+                <div class="inner-container">
+                     <div class="dashboardtitle">
+                        <h1>City Mall - Project Dashboard</h1>
+                        <img class="options_img" src="./images/options.png">
+                        <div class="clearfix"></div>
+    
+                        <div class="rectangles">
+
+                            <div class="rectangle1">
+                                <div class="content">
+                                    <p>Budget</p>
+                                    <p>2.3 M</p>
+                                </div>
+
+                                <div class="rectangle_1_padding">
+                                    <img src="./images/dollar.png">
+                                </div>
+                            </div>
+
+                            <div class="rectangle2">
+                                <div class="content">
+                                    <p>Milestone</p>
+                                    <p>24</p>
+                                </div>
+
+                                <div class="rectangle_1_padding">
+                                    <img src="./images/graph1.png">
+                                </div>
+                            </div>
+
+                            <div class="rectangle3">
+                                <div class="content">
+                                    <p>Tasks</p>
+                                    <p>137</p>
+                                </div>
+                                <div class="rectangle_1_padding">
+                                    <img src="./images/task1.png">
+                                </div>
+                            </div>
+
+                            <div class="rectangle4">
+                                <div class="content">
+                                    <p>Documents</p>
+                                    <p>241</p>
+                                </div>
+
+                                <div class="rectangle_1_padding">
+                                    <img src="./images/docs1.png">
+                                </div>
+                             </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <!--------------------------------------------Code for 4 Circles----------------------------------------------->
+           
+            <section class="section2">
+                <div class="inner-container">
+                    <div class="title">
+                        <h2>Milestones</h2>
+                            <img class="img_rightarrow" src="./images/rightarrow.png">
+                            <img class="img_leftarrow" src="./images/leftarrow.png">
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="main_parent">
+                        <div class="milestone_top_box">
+                            <div class="shadowgreen">
+                                <p class="milestone_value">100</p>
+                                <p class="milestone_percent">%</p>
+                            </div>
+                        </div>
+
+                        <div class="milestone_bottom_box">
+                            <span>1</span>
+                            <p>Milestone</p>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="main_parent">
+                        <div class="milestone_top_box">
+                            <div class="yellow">
+                                <p class="milestone_value">64</p>
+                                <p class="milestone_percent">%</p>
+                            </div>
+                        </div>
+
+                        <div class="milestone_bottom_box">
+                            <span>2</span>
+                            <p>Milestone</p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="main_parent">
+                        <div class="milestone_top_box">
+                            <div class="white">
+                                <p class="milestone_value">0</p>
+                                <p class="milestone_percent">%</p>
+                            </div>
+                        </div>
+        
+                        <div class="milestone_bottom_box">
+                            <span>3</span>
+                            <p>Milestone</p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="main_parent">
+                            <div class="milestone_top_box">
+                                <div class="white">
+                                    <p class="milestone_value">0</p>
+                                    <p class="milestone_percent">%</p>
+                                </div>
+                            </div>
+            
+                            <div class="milestone_bottom_box">
+                                <span>4</span>
+                                <p>Milestone</p>
+                                <div class="clearfix"></div>
+                            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+
+            <!--------------------------------------------Code for Progress Bar------------------------------------------->                          
+
+            <section>
+                <div class="inner-container">
+                    <div class="myprogress">
+                        <div class="progress_bar"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--------------------------------------------Code for Recent Task Section------------------------------------>
+
+            <section class="section3">
+                <div class="inner-container">
+                    <div class="leftBlock">
+                        
+                            <div class="heading">
+                                <h3>Recent Task</h3>
+                                <img class="img_options" src="./images/options.png">
+                                <div class="clearfix"></div>
+                            </div>
+
+                            
+                                <div class="checklistItems">
+                                    <ul>
+                                        <li>
+                                            <span>Lorem Ipsum dlores amet voluptates quidem</span>
+                                            <div class="rightBlockDateBlock">
+                                                <div class="date">
+                                                    <span class="recent_task_date">28<br>March 2018</span>
+                                                </div>
+                                                <span class="whitebox"></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <span>Voluptates iusto quidem harem rerum</span>
+                                            <div class="rightBlockDateBlock">
+                                                    <div class="date">
+                                                        <span class="recent_task_date">2<br>Feb 2018</span>
+                                                    </div>
+                                                    <span><img src="./images/tickmark.png"></span>
+                                                </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <span>Nullam iusto ducimus 24/7</span>
+                                            <div class="rightBlockDateBlock">
+                                                <div class="date">
+                                                    <span class="recent_task_date">12<br>Feb 2018</span>
+                                                </div>
+                                                <span class="whitebox"></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        
+                                        <li>
+                                            <span>Lorem Ipsum dlores amet voluptates quidem</span>
+                                            <div class="rightBlockDateBlock">
+                                                <div class="date">
+                                                    <span class="recent_task_date">2<br>Jan 2018</span>
+                                                </div>
+                                                <span class="whitebox"></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        <li>
+                                            <span>Lorem Ipsum dlores amet voluptates quidem</span><div class="rightBlockDateBlock">
+                                                <div class="date">
+                                                    <span class="recent_task_date">27<br>Dec 2018</span>
+                                                </div>
+                                                <span class="whitebox"></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <!-- <div class="clearfix"></div> -->
+                                    </ul>
+                                </div>
+                            <!-- <div class="clearfix"></div> -->
+                        </div>
+                    
+        <!--------------------------------------------Code for Work Task-------------------------------------------->    
+                    
+                    <div class="rightBlock">
+                        
+                         <div class="heading">
+                             <h3>Work Status</h3>
+                             <img class="img_options" src="./images/options.png">
+                         </div>
+                        
+                        <!-- <div class="smallContainer"> -->
+                            <div class="rightBlockItems">
+                       
+                                <ul>
+                                    <li>
+                                        <span>Lorem ipsum</span>
+                                        <div class="rbprogressbar">
+                                            <p class="rightblock_progressbar">
+                                                <span>43%</span>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </li>
+
+                                    <li>
+                                            <span>Lorem ipsum</span>
+                                            <div class="rbprogressbar">
+                                                <p class="rightblock_progressbar">
+                                                    <span>58%</span>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                    </li>
+
+                                    <li>
+                                            <span>Lorem ipsum</span>
+                                            <div class="rbprogressbar">
+                                                <p class="rightblock_progressbar">
+                                                    <span>32%</span>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                    </li>
+                                
+                                </ul>
+                                
+                            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+       
+            <!----------------------------------------------Code for Footer----------------------------------------------->
+
+            <footer>
+                <!-- <div class="inner-container"> -->
+                    &copy; 2018 spire consulting group.all rights reserved.
+                <!-- </div> -->
+            </footer>
+        
+    </div>
+    </body>
+</html>
+Finished: SUCCESS

@@ -1,0 +1,12 @@
+Started on Feb 10, 2020 11:58:21 AM
+Started by event from 192.30.252.99 ⇒ http://bfe0735d.ngrok.io:8080/github-webhook/ on Mon Feb 10 11:58:21 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 94c3f8b701e5354c14613a57741998473d034478 (refs/remotes/origin/master)
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git ls-remote -h -- https://github.com/AdvaitKukade/HTML-Assignment.git # timeout=10
+Found 2 remote heads on https://github.com/AdvaitKukade/HTML-Assignment.git
+[poll] Latest remote head revision on refs/heads/master is: 91d181e194a3bf35e59fa5e36d7748adfdc362e2
+Done. Took 8.9 sec
+Changes found

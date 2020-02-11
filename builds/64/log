@@ -1,0 +1,37 @@
+Started by GitHub push by AdvaitKukade
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/demo
+using credential f85b3e33-62af-482a-9897-1512c5ddeacb
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/AdvaitKukade/Tic-tac-toe-React.git # timeout=10
+Fetching upstream changes from https://github.com/AdvaitKukade/Tic-tac-toe-React.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://github.com/AdvaitKukade/Tic-tac-toe-React.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > /usr/bin/git show-ref --tags -d # timeout=10
+Checking out Revision cebf5f2e44aebc97328012a7240939284ae99585 (origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f cebf5f2e44aebc97328012a7240939284ae99585 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > /usr/bin/git rev-list --no-walk 532f471a8a520b7af9a5efc746b70e69d384e676 # timeout=10
+[demo] $ /bin/bash /tmp/jenkins5165166237187475585.sh
+/tmp/jenkins5165166237187475585.sh: line 5: node: command not found
+/tmp/jenkins5165166237187475585.sh: line 6: npm: command not found
+Build step 'Execute shell' marked build as failure
+Publish artifacts to S3 Bucket Build is still running
+Publish artifacts to S3 Bucket Using S3 profile: MyS3Profile
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=asset-manifest.json region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=favicon.ico region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=index.html region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=logo192.png region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=logo512.png region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=manifest.json region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=precache-manifest.b17994b21118a923d59b5c09eba83575.js region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=robots.txt region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Publish artifacts to S3 Bucket bucket=yogi-testdb, file=service-worker.js region=ap-south-1, will be uploaded from slave=false managed=false , server encryption false
+Finished: FAILURE
