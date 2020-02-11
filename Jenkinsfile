@@ -1,5 +1,6 @@
 pipeline {
-    agent {
+    agent 
+        docker {
        image 'node:13-alpine' 
     }
 
